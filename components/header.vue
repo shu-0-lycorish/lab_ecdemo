@@ -1,0 +1,17 @@
+<template>
+    <header>
+        <div>
+            <ul>
+                <li>PRODUCTS</li>
+                <li>NEWS</li>
+                <li>MAGAZINE</li>
+                <li>GUIDE</li>
+            </ul>
+            <h1>ThesisMart</h1>
+            <ul>
+                <li>(Account)</li>
+                <li>(Cart)</li>
+            </ul>
+        </div>
+    </header>
+</template>
