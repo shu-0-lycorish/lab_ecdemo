@@ -12,15 +12,22 @@
                 <p>ユーザ名やプロフィール画像の変更ができます。</p>
             </div>
         </div>
-        <div class="card bg-base-100 col-span-4 shadow-xl">
-            <figure>
-                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-            </figure>
-            <div class="card-body">
-                <h2 class="card-title">アカウント</h2>
-                <p>支払い方法の設定やアカウントの退会ができます。</p>
-            </div>
-        </div>
+        <button class="col-span-4">
+            <a>
+                <NuxtLink to="/setting/account">
+                    <div class="card bg-base-100 shadow-xl">
+                        <figure>
+                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">アカウント</h2>
+                            <p>支払い方法の設定やアカウントの退会ができます。</p>
+                        </div>
+                    </div>
+                </NuxtLink>
+            </a>
+        </button>
         <div class="card bg-base-100 col-span-4 shadow-xl">
             <figure>
                 <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
