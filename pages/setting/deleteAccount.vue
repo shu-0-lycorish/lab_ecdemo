@@ -28,6 +28,11 @@
                 </p>
             </div>
         </div>
-        <button class="btn btn-wide btn-neutral text-lg">退会する</button>
+        <div class="col-end-7 col-span-2">
+            <button class="btn btn-error text-lg w-full">退会する</button>
+        </div>
+        <div class="col-start-7 col-span-2">
+            <button class="btn btn-active text-lg w-full">退会せずに戻る</button>
+        </div>
     </div>
 </template>
