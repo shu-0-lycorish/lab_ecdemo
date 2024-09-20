@@ -29,14 +29,14 @@
             </div>
         </div>
         <div class="col-end-7 col-span-2">
-            <button class="btn btn-error text-lg w-full">退会する</button>
+            <NuxtLink to="/setting/compDeleteAccount">
+                <button class="btn btn-error text-lg w-full">退会する</button>
+            </NuxtLink>
         </div>
         <div class="col-start-7 col-span-2">
             <a>
                 <NuxtLink to="/setting/account">
-                    <button class="btn btn-active text-lg w-full">
-                        退会せずに戻る
-                    </button>
+                    <button class="btn btn-active text-lg w-full">退会せずに戻る</button>
                 </NuxtLink>
             </a>
         </div>
