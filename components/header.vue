@@ -20,7 +20,7 @@
             </div>
             <div class="navbar-center">
                 <div>
-                    <a class="btn btn-ghost text-xl">ThesisMart</a>
+                    <a class="btn btn-ghost text-3xl"><NuxtLink to="/">ThesisMart</NuxtLink></a>
                 </div>
             </div>
             <div class="navbar-end space-x-4">
@@ -34,7 +34,7 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a class="justify-between">プロフィール</a></li>
-                        <li><a>設定</a></li>
+                        <li><NuxtLink to="/setting">設定</NuxtLink></li>
                         <li><a>ログアウト</a></li>
                     </ul>
                 </div>
