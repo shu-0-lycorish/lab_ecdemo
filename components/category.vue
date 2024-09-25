@@ -5,18 +5,22 @@
             <p class="self-center text-xm font-bold">カテゴリー</p>
         </div>
         <div class="grid grid-cols-subgrid col-span-12">
-            <div class="col-span-4 space-y-4">
-                <nuxt-img src="/images/0101.jpg" alt="product-image" format="webp" />
-                <h2 class="text-3xl">Light</h2>
-            </div>
-            <div class="col-span-4 space-y-4">
-                <nuxt-img src="/images/0201.jpg" alt="product-image" format="webp" />
-                <h2 class="text-3xl">Clock</h2>
-            </div>
-            <div class="col-span-4 space-y-4">
-                <nuxt-img src="/images/0301.jpg" alt="product-image" format="webp" />
-                <h2 class="text-3xl">Sofa</h2>
+            <div v-for="singleData in data" :key="singleData.id" class="col-span-4 space-y-4">
+                <div>
+                    <nuxt-img :src="singleData.image" alt="product-image" format="webp" />
+                </div>
+                <div class="text-3xl">
+                    <h2 v-if="singleData.categoryId === 1">Light</h2>
+                    <h2 v-if="singleData.categoryId === 2">Clock</h2>
+                    <h2 v-if="singleData.categoryId === 3">Sofa</h2>
+                </div>
             </div>
         </div>
     </div>
 </template>
+
+<script setup>
+const { data } = await useAsyncData("productQuery", () =>
+    queryContent("/product").where({ productId: 1 }).find()
+)
+</script>
