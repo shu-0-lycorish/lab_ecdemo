@@ -16,7 +16,7 @@
                         </figure>
                         <div class="card-body">
                             <h3 class="text-2xl text-black">{{ singleData.name }}</h3>
-                            <p class="text-lg text-black">{{ singleData.price }}</p>
+                            <p class="text-lg text-black">¥ {{ singleData.price }}  (税込)</p>
                         </div>
                     </div>
                 </NuxtLink>
