@@ -6,6 +6,7 @@
         </div>
         <div class="grid grid-cols-subgrid col-span-12">
             <div v-for="singleData in data" :key="singleData.id" class="col-span-4 space-y-4">
+                <NuxtLink :to="'/list/' + [singleData.categoryId]">
                 <div>
                     <nuxt-img :src="singleData.image" alt="product-image" format="webp" />
                 </div>
@@ -14,6 +15,7 @@
                     <h2 v-if="singleData.categoryId === 2">Clock</h2>
                     <h2 v-if="singleData.categoryId === 3">Sofa</h2>
                 </div>
+                </NuxtLink>
             </div>
         </div>
     </div>
