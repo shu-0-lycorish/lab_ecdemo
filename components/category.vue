@@ -6,7 +6,7 @@
         </div>
         <div class="grid grid-cols-subgrid col-span-12">
             <div v-for="singleData in data" :key="singleData.id" class="col-span-4 space-y-4">
-                <NuxtLink :to="'/product/' + [singleData.categoryId]">
+                <NuxtLink :to="'/category/' + [singleData.categoryId]">
                 <div>
                     <nuxt-img :src="singleData.image" alt="product-image" format="webp" />
                 </div>
