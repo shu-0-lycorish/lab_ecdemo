@@ -38,11 +38,11 @@
             <div class="col-span-12 flex-1 border-b border-gray-500"></div>
 
             <div v-if="cart.length" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
-                <div class="col-start-10">
+                <div class="col-start-9">
                     <p class="font-bold">合計金額</p>
                 </div>
-                <div class="col-span-2">
-                    <h3 class="text-2xl font-bold">¥ {{ totalPrice }}</h3>
+                <div class="col-start-10 col-span-2">
+                    <h3 class="text-2xl font-bold text-right">¥ {{ totalPrice }}</h3>
                 </div>
             </div>
         </div>
