@@ -13,7 +13,8 @@
             <div class="col-span-12 flex-1 border-b border-gray-500"></div>
 
             <div v-if="cart.length" class="grid grid-cols-subgrid gap-8 col-span-12">
-                <div v-for="singleCart in cart" :key="singleCart.id" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
+                <div v-for="singleCart in cart" :key="singleCart.id"
+                    class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
                     <div class="grid grid-cols-subgrid gap-8 col-span-6 flex items-center">
                         <figure class="col-span-2">
                             <nuxt-img :src="singleCart.image" alt="product-image" format="webp" />
@@ -35,6 +36,15 @@
             </div>
 
             <div class="col-span-12 flex-1 border-b border-gray-500"></div>
+
+            <div v-if="cart.length" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
+                <div class="col-start-10">
+                    <p class="font-bold">合計金額</p>
+                </div>
+                <div class="col-span-2">
+                    <h3 class="text-2xl font-bold">¥ {{ totalPrice }}</h3>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -42,5 +52,17 @@
 <script setup>
 import { useState } from '#app'
 const cart = useState('cart')
-console.log(cart.value)
+
+let totalPrice = 0
+
+/*
+for (var i=0; i<cart.value.length; i++){
+    totalPrice += cart.value[i].price
+}
+*/
+
+for (let item of cart.value) {
+    totalPrice += item.price
+}
+
 </script>
