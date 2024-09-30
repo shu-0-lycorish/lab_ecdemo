@@ -48,7 +48,7 @@
         </div>
 
         <div class="col-start-5 col-span-4">
-            <NuxtLink to="/">
+            <NuxtLink to="compBuying">
                 <button class="btn btn-primary text-lg w-full">購入する</button>
             </NuxtLink>
         </div>
