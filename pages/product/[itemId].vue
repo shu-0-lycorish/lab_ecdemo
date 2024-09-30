@@ -7,11 +7,12 @@
             <div class="space-y-2">
                 <h2 class="text-3xl text-black">{{ data.name }}</h2>
                 <p class="text-lg text black">{{ data.summary }}</p>
+                <p>{{ data.itemId }}</p>
             </div>
             <h4 class="text-xl text-black">¥ {{ data.price }}  (税込)</h4>
             <div>
                 <NuxtLink to="/">
-                    <button class="btn btn-primary text-lg">カートに入れる</button>
+                    <button @click="addCart" class="btn btn-primary text-lg">カートに入れる</button>
                 </NuxtLink>
             </div>
         </div>
@@ -26,9 +27,20 @@
 </template>
 
 <script setup>
+import { useState } from '#app'
+const cart = useState('cart')
+// const [cart, setCart] = useState([])
+
 const { data } = await useAsyncData(useRoute().path, () =>
     queryContent(useRoute().path).findOne()
 )
 
 console.log(useRoute().path)
+// await console.log(data.value.itemId)
+
+const addCart = () => {
+    cart.value.push(data.value)
+
+    console.log(cart.value[0].itemId)
+}
 </script>
