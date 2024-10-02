@@ -49,7 +49,7 @@
 
         <div class="col-start-5 col-span-4">
             <NuxtLink to="compBuying">
-                <button class="btn btn-primary text-lg w-full">購入する</button>
+                <button @click="buyCart" class="btn btn-primary text-lg w-full">購入する</button>
             </NuxtLink>
         </div>
     </div>
@@ -69,6 +69,10 @@ for (var i=0; i<cart.value.length; i++){
 
 for (let item of cart.value) {
     totalPrice += item.price
+}
+
+const buyCart = () => {
+    cart.value.length = 0
 }
 
 </script>
