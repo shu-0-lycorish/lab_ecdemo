@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div class="col-start-5 col-span-4">
+        <div v-if="cart.length" class="col-start-5 col-span-4">
             <NuxtLink to="compBuying">
                 <button @click="buyCart" class="btn btn-primary text-lg w-full">購入する</button>
             </NuxtLink>
