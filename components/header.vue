@@ -2,20 +2,20 @@
     <header>
         <div class="navbar px-6 py-4 bg-base-100">
             <div class="navbar-start">
-                <ul class="menu menu-horizontal px-2 w-[24.5rem]">
+                <ul class="menu menu-horizontal px-2 w-[26rem]">
                     <li>
                         <details>
                             <summary>PRODUCTS</summary>
                             <ul class="bg-base-100 rounded-t-none p-1">
-                                <li><a>Light</a></li>
-                                <li><a>Clock</a></li>
-                                <li><a>Sofa</a></li>
+                                <li><NuxtLink to="/category/1"><a>Light</a></NuxtLink></li>
+                                <li><NuxtLink to="/category/2"><a>Clock</a></NuxtLink></li>
+                                <li><NuxtLink to="/category/3"><a>Sofa</a></NuxtLink></li>
                             </ul>
                         </details>
                     </li>
-                    <li><a>NEWS</a></li>
-                    <li><a>MAGAZINE</a></li>
-                    <li><a>GUIDE</a></li>
+                    <li><NuxtLink to="/news"><a>NEWS</a></NuxtLink></li>
+                    <li><NuxtLink to="/magazine"><a>MAGAZINE</a></NuxtLink></li>
+                    <li><NuxtLink to="/contact"><a>CONTACT</a></NuxtLink></li>
                 </ul>
             </div>
             <div class="navbar-center">
@@ -33,7 +33,7 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a class="justify-between">プロフィール</a></li>
+                        <li><NuxtLink to="/setting/profile">プロフィール</NuxtLink></li>
                         <li><NuxtLink to="/setting/menu">設定</NuxtLink></li>
                         <li><a>ログアウト</a></li>
                     </ul>
