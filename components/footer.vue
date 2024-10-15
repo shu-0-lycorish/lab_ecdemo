@@ -6,13 +6,12 @@
                 <p>Demo EC Site for Thesis</p>
             </aside>
             <nav>
-                <a class="link link-hover text-xl">PRODUCTS</a>
-                <a class="link link-hover text-xl">NEWS</a>
-                <a class="link link-hover text-xl">MAGAZINE</a>
-                <a class="link link-hover text-xl">GUIDE</a>
+                <a class="link link-hover text-xl"><NuxtLink to="/">TOP</NuxtLink></a>
+                <a class="link link-hover text-xl"><NuxtLink to="/news">NEWS</NuxtLink></a>
+                <a class="link link-hover text-xl"><NuxtLink to="/magazine">MAGAZINE</NuxtLink></a>
             </nav>
             <nav>
-                <a class="link link-hover text-xl">CONTACT</a>
+                <a class="link link-hover text-xl"><NuxtLink to="/contact">CONTACT</NuxtLink></a>
                 <a class="link link-hover text-xl">COMPANY</a>
                 <a class="link link-hover text-xl">PRIVASY POLISY</a>
             </nav>
