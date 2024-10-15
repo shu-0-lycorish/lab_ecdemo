@@ -20,7 +20,7 @@
         </div>
         <div class="col-start-6 col-span-2">
             <a>
-                <NuxtLink to="/">
+                <NuxtLink to="/top">
                     <button class="btn btn-active text-lg w-full">
                         トップページ
                     </button>

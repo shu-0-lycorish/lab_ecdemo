@@ -20,7 +20,7 @@
             </div>
             <div class="navbar-center">
                 <div>
-                    <a class="btn btn-ghost text-3xl"><NuxtLink to="/">ThesisMart</NuxtLink></a>
+                    <a class="btn btn-ghost text-3xl"><NuxtLink to="/top">ThesisMart</NuxtLink></a>
                 </div>
             </div>
             <div class="navbar-end space-x-4">
