@@ -54,10 +54,14 @@
                 </div>
             </div>
         </div>
+        <div v-if="siteType !== 'A' && siteType === 'B'">
+            <DCountdown />
+        </div>
     </header>
 </template>
 
 <script setup>
 import { useState } from '#app'
 const cart = useState('cart')
+const siteType = useState('siteType')
 </script>
