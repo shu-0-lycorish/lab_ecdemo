@@ -17,7 +17,7 @@
                         <div class="card-body">
                             <h3 class="text-2xl text-black">{{ singleData.name }}</h3>
                             <div>
-                                <div v-if="siteType !== 'A' && siteType === 'B'">
+                                <div v-if="siteType !== 'A' && siteType === 'B' && category === 1">
                                     <p class="text-xm font-bold text-red-500">{{ singleData.darkData }}</p>
                                 </div>
                                 <p class="text-lg text-black">¥ {{ singleData.price }}  (税込)</p>

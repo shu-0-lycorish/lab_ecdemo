@@ -4,6 +4,10 @@
             <nuxt-img :src="data.image" alt="blog-image" format="webp" />
         </div>
         <div class="col-span-5 content-center space-y-8">
+            <div v-if="siteType !== 'A' && siteType === 'B' && 200 < itemId && itemId < 300">
+                <p class="text-xm font-bold text-red-500">{{ data.darkData }}</p>
+            </div>
+
             <div class="space-y-2">
                 <h2 class="text-3xl text-black">{{ data.name }}</h2>
                 <p class="text-lg text black">{{ data.summary }}</p>
@@ -11,7 +15,7 @@
 
             <h4 class="text-xl text-black">¥ {{ data.price }} (税込)</h4>
 
-            <div v-if="siteType !== 'A' && siteType === 'B'">
+            <div v-if="siteType !== 'A' && siteType === 'B' && 100 < itemId && itemId < 200">
                 <p class="text-xm font-bold text-red-500">{{ data.darkData }}</p>
             </div>
 
@@ -39,6 +43,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useState } from '#app'
+import CategoryId from '../category/[categoryId].vue';
 
 const cart = useState('cart')
 // const [cart, setCart] = useState([])
@@ -63,4 +68,8 @@ const addCart = () => {
 }
 
 const siteType = useState('siteType')
+
+const path = useRoute().path
+var itemId = Number(path.replace('/product/', ''))
+console.log(itemId)
 </script>
