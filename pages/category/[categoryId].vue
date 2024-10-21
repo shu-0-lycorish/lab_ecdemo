@@ -16,7 +16,12 @@
                         </figure>
                         <div class="card-body">
                             <h3 class="text-2xl text-black">{{ singleData.name }}</h3>
-                            <p class="text-lg text-black">¥ {{ singleData.price }}  (税込)</p>
+                            <div>
+                                <div v-if="siteType !== 'A' && siteType === 'B'">
+                                    <p class="text-xm font-bold text-red-500">{{ singleData.darkData }}</p>
+                                </div>
+                                <p class="text-lg text-black">¥ {{ singleData.price }}  (税込)</p>
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
@@ -26,6 +31,8 @@
 </template>
 
 <script setup>
+import { useState } from '#app'
+
 const path = useRoute().path
 var category = Number(path.replace('/category/', ''))
 
@@ -34,4 +41,6 @@ const { data } = await useAsyncData("productQuery2", () =>
 )
 
 console.log(category)
+
+const siteType = useState('siteType')
 </script>

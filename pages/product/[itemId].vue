@@ -7,9 +7,13 @@
             <div class="space-y-2">
                 <h2 class="text-3xl text-black">{{ data.name }}</h2>
                 <p class="text-lg text black">{{ data.summary }}</p>
-                <p>{{ data.itemId }}</p>
             </div>
+
             <h4 class="text-xl text-black">¥ {{ data.price }} (税込)</h4>
+
+            <div v-if="siteType !== 'A' && siteType === 'B'">
+                <p class="text-xm font-bold text-red-500">{{ data.darkData }}</p>
+            </div>
 
 
             <div>
@@ -34,8 +38,8 @@
 
 <script setup>
 import { ref } from 'vue'
-
 import { useState } from '#app'
+
 const cart = useState('cart')
 // const [cart, setCart] = useState([])
 
@@ -57,4 +61,6 @@ const addCart = () => {
 
     console.log(cart.value[0].itemId)
 }
+
+const siteType = useState('siteType')
 </script>
