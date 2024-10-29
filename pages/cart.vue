@@ -45,8 +45,25 @@
                     <h3 class="text-2xl font-bold text-right">¥ {{ totalPrice }}</h3>
                 </div>
             </div>
+
+
         </div>
 
+        <div class="col-start-5 col-span-4">
+            <div v-if="cart.length && siteType === 'A' && siteType !== 'B'" class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="text-xm">メールマガジンを購読する</span>
+                    <input type="checkbox" class="checkbox" />
+                </label>
+            </div>
+            <div v-if="cart.length && siteType !== 'A' && siteType === 'B'" class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="text-xm">メールマガジンを購読しない</span>
+                    <input type="checkbox" class="checkbox" />
+                </label>
+            </div>
+        </div>
+        
         <div v-if="cart.length" class="col-start-5 col-span-4">
             <NuxtLink to="compBuying">
                 <button @click="buyCart" class="btn btn-primary text-lg w-full">購入する</button>
@@ -74,5 +91,7 @@ for (let item of cart.value) {
 const buyCart = () => {
     cart.value.length = 0
 }
+
+const siteType = useState('siteType')
 
 </script>
