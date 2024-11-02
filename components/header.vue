@@ -20,7 +20,7 @@
             </div>
             <div class="navbar-center">
                 <div>
-                    <a class="btn btn-ghost text-3xl"><NuxtLink to="/">ThesisMart</NuxtLink></a>
+                    <a class="btn btn-ghost text-3xl"><NuxtLink to="/top">ThesisMart</NuxtLink></a>
                 </div>
             </div>
             <div class="navbar-end space-x-4">
@@ -54,10 +54,14 @@
                 </div>
             </div>
         </div>
+        <div v-if="siteType !== 'A' && siteType === 'B'">
+            <DCountdown />
+        </div>
     </header>
 </template>
 
 <script setup>
 import { useState } from '#app'
 const cart = useState('cart')
+const siteType = useState('siteType')
 </script>

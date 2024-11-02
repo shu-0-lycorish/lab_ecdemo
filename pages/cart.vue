@@ -4,7 +4,7 @@
             <h1 class="text-4xl">カート</h1>
         </div>
 
-        <div class="grid grid-cols-subgrid gap-8 col-span-12 py-8">
+        <div class="grid grid-cols-subgrid gap-8 col-span-12">
             <div class="col-span-2"></div>
             <div class="col-span-4">商品名</div>
             <div class="col-span-2"></div>
@@ -45,9 +45,29 @@
                     <h3 class="text-2xl font-bold text-right">¥ {{ totalPrice }}</h3>
                 </div>
             </div>
+
+
         </div>
 
-        <div v-if="cart.length" class="col-start-5 col-span-4">
+        <div class="col-end-12 col-span-3">
+            <div v-if="cart.length && siteType === 'A' && siteType !== 'B'" class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="text-xm">メールマガジンを購読する</span>
+                    <input type="checkbox" class="checkbox" />
+                </label>
+            </div>
+            <div v-if="cart.length && siteType !== 'A' && siteType === 'B'" class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="text-xm">メールマガジンを購読しない</span>
+                    <input type="checkbox" class="checkbox" />
+                </label>
+                <p class="text-xs">
+                購入手続きを完了すると<NuxtLink to="/terms" class="underline hover:text-blue-500">利用規約</NuxtLink>に同意されたものとみなします。
+            </p>
+            </div>
+        </div>
+
+        <div v-if="cart.length" class="col-end-12 col-span-3">
             <NuxtLink to="compBuying">
                 <button @click="buyCart" class="btn btn-primary text-lg w-full">購入する</button>
             </NuxtLink>
@@ -74,5 +94,7 @@ for (let item of cart.value) {
 const buyCart = () => {
     cart.value.length = 0
 }
+
+const siteType = useState('siteType')
 
 </script>

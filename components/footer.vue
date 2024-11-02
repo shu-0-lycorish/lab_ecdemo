@@ -6,7 +6,7 @@
                 <p>Demo EC Site for Thesis</p>
             </aside>
             <nav>
-                <a class="link link-hover text-xl"><NuxtLink to="/">TOP</NuxtLink></a>
+                <a class="link link-hover text-xl"><NuxtLink to="/top">TOP</NuxtLink></a>
                 <a class="link link-hover text-xl"><NuxtLink to="/news">NEWS</NuxtLink></a>
                 <a class="link link-hover text-xl"><NuxtLink to="/magazine">MAGAZINE</NuxtLink></a>
             </nav>
