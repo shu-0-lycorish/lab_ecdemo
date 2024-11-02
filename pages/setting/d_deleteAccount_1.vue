@@ -56,7 +56,7 @@
                 </p>
 
                 <p class="text-lg">
-                    このページの内容をご確認いただき、<NuxtLink to="/setting/account" class="underline hover:text-blue-500">次のページ</NuxtLink>で退会手続きを続けることができますが、もう一度よくご検討いただけますようお願い申し上げます。
+                    このページの内容をご確認いただき、<NuxtLink to="/setting/d_deleteAccount_2" class="underline hover:text-blue-500">次のページ</NuxtLink>で退会手続きを続けることができますが、もう一度よくご検討いただけますようお願い申し上げます。
                 </p>
             </div>
         </div>
