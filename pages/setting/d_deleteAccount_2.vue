@@ -7,7 +7,7 @@
         <div class="col-span-12 py-14">
             <div class="flex flex-col space-y-4">
 
-                <h3 class="text-2xl">退会によるデータ削除と再登録時の注意点</h3>
+                <h3 class="text-2xl">退会をご決断される前に再度のご確認をお願いいたします</h3>
                 <p class="text-lg">
                     一度退会されますと、お客様のデータ、ポイント、特典、利用履歴は全て無効となり、再登録を行った際も復元することができません。
                     また、会員の皆様にとって特典となる長年の利用に応じたリワードも消失してしまいますので、ぜひ再加入プランについてご検討いただければと思います。
@@ -82,7 +82,7 @@
                 </div>
 
                 <p class="text-lg">
-                    アンケートにご回答いただきました後、<NuxtLink to="/setting/account" class="underline hover:text-blue-500">次のページ
+                    アンケートにご回答いただきました後、<NuxtLink to="/setting/d_deleteAccount_3" class="underline hover:text-blue-500">次のページ
                     </NuxtLink>で退会手続きを続けることが可能です。再度のご確認をお願い申し上げます。
                 </p>
             </div>
