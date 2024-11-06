@@ -9,7 +9,7 @@
             </div>
 
             <div class="space-y-2">
-                <h2 class="text-3xl text-black">{{ data.name }}</h2>
+                <h2 class="text-3xl text-black font-light">{{ data.name }}</h2>
                 <p class="text-lg text black">{{ data.summary }}</p>
             </div>
 
@@ -21,22 +21,21 @@
 
             <div>
                 <div v-if="cartButton">
-                    <button class="btn btn-error text-lg">カートに追加しました</button>
+                    <button class="btn btn-secondary text-lg">カートに追加しました</button>
                 </div>
                 <div v-else>
                     <div v-if="itemId === 303 && siteType === 'B'">
-                        <button onclick="d_modal.showModal()" class="btn btn-primary text-lg">カートに追加する</button>
+                        <button onclick="d_modal.showModal()" class="btn btn-neutral text-lg ">カートに追加する</button>
                     </div>
                     <div v-else>
-                        <button v-on:click="addCart" class="btn btn-primary text-lg">カートに追加する</button>
+                        <button v-on:click="addCart" class="btn btn-neutral text-lg font-norma">カートに追加する</button>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="col-span-12 my-16 space-y-8">
             <h2 class="text-3xl">商品説明</h2>
-            <div>
+            <div class="text-lg">
                 <ContentDoc />
             </div>
         </div>
