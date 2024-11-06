@@ -1,15 +1,15 @@
 <template>
     <header>
-        <div class="navbar px-6 py-4 bg-base-100">
+        <div class="navbar px-6 py-4 bg-base-100 z-50">
             <div class="navbar-start">
                 <ul class="menu menu-horizontal px-2 w-[26rem]">
                     <li>
                         <details>
                             <summary>PRODUCTS</summary>
-                            <ul class="bg-base-100 rounded-t-none p-1">
-                                <li><NuxtLink to="/category/1"><a>Light</a></NuxtLink></li>
-                                <li><NuxtLink to="/category/2"><a>Clock</a></NuxtLink></li>
-                                <li><NuxtLink to="/category/3"><a>Sofa</a></NuxtLink></li>
+                            <ul class="bg-base-100 rounded-t-none w-[9rem] pl-1 z-40">
+                                <li><NuxtLink to="/category/1"><a>Light - 照明</a></NuxtLink></li>
+                                <li><NuxtLink to="/category/2"><a>Clock - 時計</a></NuxtLink></li>
+                                <li><NuxtLink to="/category/3"><a>Sofa - ソファ</a></NuxtLink></li>
                             </ul>
                         </details>
                     </li>
@@ -20,7 +20,7 @@
             </div>
             <div class="navbar-center">
                 <div>
-                    <a class="btn btn-ghost text-3xl"><NuxtLink to="/top">ThesisMart</NuxtLink></a>
+                    <NuxtLink to="/top"><a class="btn btn-ghost text-3xl">ThesisMart</a></NuxtLink>
                 </div>
             </div>
             <div class="navbar-end space-x-4">
@@ -35,7 +35,7 @@
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><NuxtLink to="/setting/profile">プロフィール</NuxtLink></li>
                         <li><NuxtLink to="/setting/menu">設定</NuxtLink></li>
-                        <li><a>ログアウト</a></li>
+                        <li><NuxtLink to="/"><a>ログアウト</a></NuxtLink></li>
                     </ul>
                 </div>
                 <div>
