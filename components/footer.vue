@@ -3,7 +3,7 @@
         <div class="footer bg-base-200 text-base-content px-[8%] py-20 space-x-12">
             <aside class="space-y-4 w-[56vw]">
                 <h1 class="text-4xl">ThesisMart</h1>
-                <p>Demo EC Site for Thesis</p>
+                <p class="text-lg">Demo EC Site for Thesis</p>
             </aside>
             <nav>
                 <a class="link link-hover text-xl"><NuxtLink to="/top">TOP</NuxtLink></a>
