@@ -41,8 +41,8 @@
                 <div class="col-start-9">
                     <p class="font-bold">合計金額(税込)</p>
                 </div>
-                <div class="col-start-10 col-span-2">
-                    <h3 class="text-2xl font-bold text-right">¥ {{ totalPrice }}</h3>
+                <div class="col-start-11 col-span-2">
+                    <h3 class="text-2xl font-bold">¥ {{ totalPrice }}</h3>
                 </div>
             </div>
 
