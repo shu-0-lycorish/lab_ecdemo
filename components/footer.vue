@@ -5,15 +5,15 @@
                 <h1 class="text-4xl">ThesisMart</h1>
                 <p class="text-lg">Demo EC Site for Thesis</p>
             </aside>
-            <nav>
-                <a class="link link-hover text-xl"><NuxtLink to="/top">TOP</NuxtLink></a>
-                <a class="link link-hover text-xl"><NuxtLink to="/news">NEWS</NuxtLink></a>
-                <a class="link link-hover text-xl"><NuxtLink to="/magazine">MAGAZINE</NuxtLink></a>
+            <nav class="text-xl">
+                <a class="link link-hover"><NuxtLink to="/top">TOP</NuxtLink></a>
+                <a class="link link-hover"><NuxtLink to="/news">NEWS</NuxtLink></a>
+                <a class="link link-hover"><NuxtLink to="/magazine">MAGAZINE</NuxtLink></a>
             </nav>
-            <nav>
-                <a class="link link-hover text-xl"><NuxtLink to="/contact">CONTACT</NuxtLink></a>
-                <a class="link link-hover text-xl">COMPANY</a>
-                <a class="link link-hover text-xl">PRIVASY POLISY</a>
+            <nav class="text-xl">
+                <a class="link link-hover"><NuxtLink to="/contact">CONTACT</NuxtLink></a>
+                <a class="link link-hover"><NuxtLink to="/404">COMPANY</NuxtLink></a>
+                <a class="link link-hover"><NuxtLink to="/404">PRIVASY POLISY</NuxtLink></a>
             </nav>
         </div>
     </footer>

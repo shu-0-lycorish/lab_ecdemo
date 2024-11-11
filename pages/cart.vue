@@ -38,7 +38,7 @@
             <div class="col-span-12 flex-1 border-b border-gray-500"></div>
 
             <div v-if="cart.length" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
-                <div class="col-start-9">
+                <div class="col-start-9 col-span-2">
                     <p class="font-bold">合計金額(税込)</p>
                 </div>
                 <div class="col-start-11 col-span-2">
