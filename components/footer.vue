@@ -12,8 +12,8 @@
             </nav>
             <nav class="text-xl">
                 <a class="link link-hover"><NuxtLink to="/contact">CONTACT</NuxtLink></a>
-                <a class="link link-hover">COMPANY</a>
-                <a class="link link-hover">PRIVASY POLISY</a>
+                <a class="link link-hover"><NuxtLink to="/404">COMPANY</NuxtLink></a>
+                <a class="link link-hover"><NuxtLink to="/404">PRIVASY POLISY</NuxtLink></a>
             </nav>
         </div>
     </footer>
