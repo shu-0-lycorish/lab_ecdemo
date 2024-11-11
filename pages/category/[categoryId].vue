@@ -17,16 +17,16 @@
         <div class="grid grid-cols-subgrid col-span-12">
             <div v-for="singleData in data" :key="singleData.id" class="col-span-4 space-y-4">
                 <NuxtLink :to="singleData._path">
-                    <div class="shadow-xl">
+                    <div class="shadow-xl hover:shadow-2xl">
                         <nuxt-img :src="singleData.image" alt="product-image" format="webp" />
-                        <div class="px-5 py-4">
-                            <h3 class="text-2xl text-black font-light">{{ singleData.name }}</h3>
-                            <div>
-                                <div v-if="siteType !== 'A' && siteType === 'B' && category === 1">
-                                    <p class="text-xm font-bold text-red-500">{{ singleData.darkData }}</p>
-                                </div>
-                                <p class="text-lg text-black">¥ {{ singleData.price }} (税込)</p>
+                    </div>
+                    <div class="px-5 py-4">
+                        <h3 class="text-2xl text-black font-light">{{ singleData.name }}</h3>
+                        <div>
+                            <div v-if="siteType !== 'A' && siteType === 'B' && category === 1">
+                                <p class="text-xm font-bold text-red-500">{{ singleData.darkData }}</p>
                             </div>
+                            <p class="text-lg text-black">¥ {{ singleData.price }} (税込)</p>
                         </div>
                     </div>
                 </NuxtLink>
