@@ -1,5 +1,5 @@
 <template>
-    <div :key="renderKey" class="grid grid-cols-12 gap-8 my-16 relative mx-[8%] min-h-[52vh] place-content-start">
+    <div :key="renderKey" class="grid grid-cols-12 gap-8 my-16 relative mx-[8%]">
         <div class="col-span-7">
             <nuxt-img :src="data.image" alt="blog-image" format="webp" />
         </div>
@@ -170,9 +170,6 @@ const { data } = await useAsyncData(useRoute().path, () =>
     queryContent(useRoute().path).findOne()
 )
 
-console.log(useRoute().path)
-// await console.log(data.value.itemId)
-
 let cartButton = false
 
 const renderKey = ref(0)
@@ -186,8 +183,6 @@ const addCart = () => {
 }
 
 const siteType = useState('siteType')
-
 const path = useRoute().path
 var itemId = Number(path.replace('/product/', ''))
-console.log(itemId)
 </script>

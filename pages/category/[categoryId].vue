@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-12 gap-8 my-12 relative mx-[8%] min-h-[52vh] place-content-start">
+    <div class="grid grid-cols-12 gap-8 my-12 relative mx-[8%]">
         <div class="col-span-12">
             <div v-if="category === 1" class="flex space-x-3">
                 <h2 class="text-3xl font-light">Light</h2>
@@ -40,12 +40,9 @@ import { useState } from '#app'
 
 const path = useRoute().path
 var category = Number(path.replace('/category/', ''))
+const siteType = useState('siteType')
 
 const { data } = await useAsyncData("productQuery2", () =>
     queryContent("/product").where({ categoryId: category }).find()
 )
-
-console.log(category)
-
-const siteType = useState('siteType')
 </script>

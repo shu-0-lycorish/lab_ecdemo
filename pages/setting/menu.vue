@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-12 gap-8 mx-[8%] my-16 pb-[12%]">
+    <div class="grid grid-cols-12 gap-8 mx-[8%] my-16">
         <div class="col-span-12">
             <h1 class="text-4xl">設定</h1>
         </div>

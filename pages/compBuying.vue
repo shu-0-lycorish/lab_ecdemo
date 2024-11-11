@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-12 gap-8 my-16 pb-[6%] relative mx-[8%]">
+    <div class="grid grid-cols-12 gap-8 my-16 relative mx-[8%]">
         <div class="col-span-12">
             <h1 class="text-4xl">カート</h1>
         </div>
