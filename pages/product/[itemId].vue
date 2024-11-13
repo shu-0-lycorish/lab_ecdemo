@@ -25,7 +25,7 @@
                 </div>
                 <div v-else>
                     <div v-if="itemId === 303 && siteType === 'B'">
-                        <button onclick="d_modal.showModal()" class="btn btn-neutral text-lg ">カートに追加する</button>
+                        <button onclick="d_modal.showModal()" class="btn btn-neutral text-lg">カートに追加する</button>
                     </div>
                     <div v-else>
                         <button v-on:click="addCart" class="btn btn-neutral text-lg font-norma">カートに追加する</button>
