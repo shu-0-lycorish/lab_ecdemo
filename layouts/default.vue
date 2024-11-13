@@ -1,7 +1,15 @@
 <template>
     <div class="flex flex-col min-h-screen">
-        <Header />
+        <div v-if="route.path !== '/'">
+            <Header />
+        </div>
         <main class="flex-grow"><slot/></main>
-        <Footer />
+        <div v-if="route.path !== '/'">
+            <Footer />
+        </div>
     </div>
 </template>
+
+<script setup>
+const route = useRoute()
+</script>

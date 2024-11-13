@@ -54,8 +54,13 @@
                 </div>
             </div>
         </div>
+        
         <div v-if="siteType !== 'A' && siteType === 'B'">
             <DCountdown />
+        </div>
+
+        <div v-if="siteType !== 'A' && siteType !== 'B'" class="p-4 bg-error">
+            <h3 class="text-2xl font-bold text-center">siteTypeが未入力または正しくありません。実験情報の入力からやり直してください。</h3>
         </div>
     </header>
 </template>
