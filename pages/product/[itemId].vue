@@ -24,7 +24,7 @@
                     <button class="btn btn-secondary text-lg">カートに追加しました</button>
                 </div>
                 <div v-else>
-                    <div v-if="300 <= itemId && itemId < 399 && siteType === 'B'">
+                    <div v-if="300 <= itemId && itemId < 400 && siteType === 'B'">
                         <button onclick="d_modal.showModal()" class="btn btn-neutral text-lg">カートに追加する</button>
                     </div>
                     <div v-else>
