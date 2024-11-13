@@ -4,7 +4,7 @@
             <p class="font-bold">下記時間内の購入で合計金額から10％OFF！</p>
             <div class="flex items-center">
                 <p>残り　</p>
-                <span class="countdown font-mono text-4xl text-red-600">
+                <span class="countdown font-mono text-4xl text-red-500">
                     <span :style="'--value:' + minutes + ';'"></span>
                     :
                     <span :style="'--value:' + seconds + ';'"></span>
