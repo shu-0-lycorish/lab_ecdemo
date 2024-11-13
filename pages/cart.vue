@@ -37,12 +37,30 @@
 
             <div class="col-span-12 flex-1 border-b border-gray-500"></div>
 
-            <div v-if="cart.length" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
+            <div v-if="cart.length && siteType === 'A'" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
                 <div class="col-start-9 col-span-2">
                     <p class="font-bold">合計金額(税込)</p>
                 </div>
                 <div class="col-start-11 col-span-2">
                     <h3 class="text-2xl font-bold">¥ {{ totalPrice }}</h3>
+                </div>
+            </div>
+
+            <div v-if="cart.length && siteType === 'B'" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
+                <div class="col-start-9 col-span-2">
+                    <p class="font-bold line-through">合計金額(税込)</p>
+                </div>
+                <div class="col-start-11 col-span-2">
+                    <h3 class="text-2xl font-bold line-through">¥ {{ totalPrice }}</h3>
+                </div>
+            </div>
+
+            <div v-if="cart.length && siteType === 'B'" class="grid grid-cols-subgrid gap-8 col-span-12 flex items-center">
+                <div class="col-start-9 col-span-2">
+                    <p class="font-bold text-red-500">セール適用後合計(税込)</p>
+                </div>
+                <div class="col-start-11 col-span-2">
+                    <h3 class="text-2xl font-bold text-red-500">¥ {{ totalPrice * 0.9}}</h3>
                 </div>
             </div>
 
@@ -78,6 +96,7 @@
 <script setup>
 import { useState } from '#app'
 const cart = useState('cart')
+const siteType = useState('siteType')
 
 let totalPrice = 0
 
@@ -94,7 +113,4 @@ for (let item of cart.value) {
 const buyCart = () => {
     cart.value.length = 0
 }
-
-const siteType = useState('siteType')
-
 </script>
