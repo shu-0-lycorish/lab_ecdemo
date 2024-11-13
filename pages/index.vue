@@ -1,16 +1,16 @@
 <template>
-    <div class="grid grid-cols-12 gap-8 mx-[8%] my-16">
+    <div class="h-[85vh] grid grid-cols-12 gap-8 mx-[8%] my-16 content-center">
         <div class="col-span-12">
-            <h1 class="text-4xl">実験情報の入力</h1>
+            <h1 class="text-4xl text-center">実験情報の入力</h1>
         </div>
 
         <div class="col-span-12">
-            <h4 class="text-xl">
+            <h4 class="text-xl text-center">
                 テキストボックスに指示された内容を入力してください．
                 <br>
                 入力完了後，「実験を開始する」のボタンから実験を開始してください．
             </h4>
-            <p class="text-lg text-red-500">(※半角英数字で入力)</p>
+            <p class="text-lg text-red-500 text-center">(※半角英数字で入力)</p>
         </div>
 
         <div class="col-start-5 col-span-4 flex justify-center items-end">
