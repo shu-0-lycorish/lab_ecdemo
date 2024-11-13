@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-12 gap-8 my-12 relative mx-[8%]">
+    <div class="grid grid-cols-12 gap-8 my-12 mx-[8%]">
         <div class="col-span-12">
             <div v-if="category === 1" class="flex space-x-3">
                 <h2 class="text-3xl font-light">Light</h2>
@@ -23,10 +23,11 @@
                     <div class="px-5 py-4">
                         <h3 class="text-2xl text-black font-light">{{ singleData.name }}</h3>
                         <div>
-                            <div v-if="siteType !== 'A' && siteType === 'B' && category === 1">
+                            <p class="text-lg text-black">¥ {{ singleData.price }} (税込)</p>
+                            <div v-if="siteType !== 'A' && siteType === 'B' && category !== 3">
                                 <p class="text-xm font-bold text-red-500">{{ singleData.darkData }}</p>
                             </div>
-                            <p class="text-lg text-black">¥ {{ singleData.price }} (税込)</p>
+
                         </div>
                     </div>
                 </NuxtLink>
