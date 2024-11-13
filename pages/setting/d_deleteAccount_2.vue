@@ -30,53 +30,55 @@
                     以下に簡単なアンケートがありますので、ぜひご協力をお願いいたします。
                 </p>
 
-                <div class="grid grid-cols-subgrid gap-16 col-span-8">
-                    <p class="col-span-5 text-lg">退会の理由を教えてください。(複数選択可)</p>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">商品の充実度</span>
-                        </label>
+                <div class="col-span-12 space-y-4">
+                    <p class="text-lg font-bold">退会の理由を教えてください。(複数選択可)</p>
+                    <div class="flex flex-row space-x-8">
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">商品の充実度</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">商品の質</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">商品の価格</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">お届け日数</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">お客様への対応</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">サイトの操作性</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">その他</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">商品の質</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">商品の価格</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">お届け日数</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">お客様への対応</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox mr-2" />
-                            <span class="label-text text-lg">サイトの操作性</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">その他</span>
-                        </label>
-                    </div>
-                    <label class="form-control col-span-5 w-full">
-                        <p class="text-lg">退会理由を詳しくお書きください。</p>
-                        <textarea class="textarea textarea-bordered text-xl w-full h-80"></textarea>
+                    <p class="text-lg font-bold">退会理由を詳しくお書きください。</p>
+                    <label class="form-control w-full">
+                        <textarea class="textarea textarea-bordered text-xl w-full h-40"></textarea>
                     </label>
                 </div>
 
