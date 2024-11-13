@@ -1,5 +1,4 @@
 <template>
-    dark_deleteAccount_2
     <div class="grid grid-cols-12 gap-8 my-16 pb-[6%] relative mx-[8%]">
         <div class="col-span-12">
             <h1 class="text-4xl">退会</h1>
@@ -10,7 +9,7 @@
                 <h3 class="text-2xl">退会によるデータ削除と再登録時の注意点</h3>
                 <p class="text-lg">
                     一度退会されますと、お客様のデータ、ポイント、特典、利用履歴は全て無効となり、再登録を行った際も復元することができません。
-                    また、会員の皆様にとって特典となる長年の利用に応じたリワードも消失してしまいますので、ぜひ再加入プランについてご検討いただければと思います。
+                    また、会員の皆様にとって特典となる長年の利用に応じたリワードも消失します。
                 </p>
 
                 <div class="col-span-12 flex-1 border-b border-gray-500"></div>
@@ -28,62 +27,64 @@
                 <p class="text-lg">
                     私たちは、サービスを日々進化させるために、会員様からのフィードバックをとても大切にしています。
                     お客様が退会に至るご決断をされた背景やお考えを伺い、今後のサービス改善に役立てたいと考えております。
-                    以下に簡単なアンケートをご用意いたしましたので、ぜひご協力をお願い申し上げます。
+                    以下に簡単なアンケートがありますので、ぜひご協力をお願いいたします。
                 </p>
 
-                <div class="grid grid-cols-subgrid gap-16 col-span-8">
-                    <p class="col-span-5 text-lg">退会の理由を教えてください。(複数選択可)</p>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">商品の充実度</span>
-                        </label>
+                <div class="col-span-12 space-y-4">
+                    <p class="text-lg font-bold">退会の理由を教えてください。(複数選択可)</p>
+                    <div class="flex flex-row space-x-8">
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">商品の充実度</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">商品の質</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">商品の価格</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">お届け日数</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">お客様への対応</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">サイトの操作性</span>
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label cursor-pointer">
+                                <input type="checkbox" class="checkbox mr-2" />
+                                <span class="label-text text-lg">その他</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">商品の質</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">商品の価格</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">お届け日数</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">お客様への対応</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox mr-2" />
-                            <span class="label-text text-lg">サイトの操作性</span>
-                        </label>
-                    </div>
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <input type="checkbox" class="checkbox" />
-                            <span class="label-text text-lg">その他</span>
-                        </label>
-                    </div>
-                    <label class="form-control col-span-5 w-full">
-                        <p class="text-lg">退会理由を詳しくお書きください。</p>
-                        <textarea class="textarea textarea-bordered text-xl w-full h-80"></textarea>
+                    <p class="text-lg font-bold">退会理由を詳しくお書きください。</p>
+                    <label class="form-control w-full">
+                        <textarea class="textarea textarea-bordered text-xl w-full h-40"></textarea>
                     </label>
                 </div>
 
                 <p class="text-lg">
                     アンケートにご回答いただきました後、<NuxtLink to="/setting/d_deleteAccount_3" class="underline hover:text-blue-500">次のページ
-                    </NuxtLink>で退会手続きを続けることが可能です。再度のご確認をお願い申し上げます。
+                    </NuxtLink>で退会手続きを続けることが可能です。再度のご確認をお願いいたします。
                 </p>
             </div>
         </div>
