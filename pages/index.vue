@@ -16,16 +16,16 @@
         <div class="col-start-5 col-span-4 flex justify-center items-end">
             <p>実験No:　</p>
             <div v-if="siteTypeInput === '' && subjectIDInput === ''">
-                <h1 class="text-4xl text-primary">????</h1>
+                <h1 class="text-4xl text-info">????</h1>
             </div>
             <div v-if="siteTypeInput === '' && subjectIDInput !== ''">
-                <h1 class="text-4xl text-primary">{{ "?" + subjectIDInput }}</h1>
+                <h1 class="text-4xl text-info">{{ "?" + subjectIDInput }}</h1>
             </div>
             <div v-if="siteTypeInput !== '' && subjectIDInput === ''">
-                <h1 class="text-4xl text-primary">{{ siteTypeInput + "???" }}</h1>
+                <h1 class="text-4xl text-info">{{ siteTypeInput + "???" }}</h1>
             </div>
             <div v-if="siteTypeInput !== '' && subjectIDInput !== ''">
-                <h1 class="text-4xl text-primary">{{ siteTypeInput + subjectIDInput }}</h1>
+                <h1 class="text-4xl text-info">{{ siteTypeInput + subjectIDInput }}</h1>
             </div>
         </div>
 
@@ -55,7 +55,7 @@
             </div>
 
             <div class="col-start-6 col-span-2">
-                <NuxtLink to="/top"><button v-on:click="startExpt" class="btn btn-primary text-lg w-full">実験を開始する</button></NuxtLink>
+                <NuxtLink to="/top"><button v-on:click="startExpt" class="btn btn-info text-lg w-full">実験を開始する</button></NuxtLink>
             </div>
         </div>
     </div>
