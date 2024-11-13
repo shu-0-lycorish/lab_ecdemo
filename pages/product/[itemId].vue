@@ -24,7 +24,7 @@
                     <button class="btn btn-secondary text-lg">カートに追加しました</button>
                 </div>
                 <div v-else>
-                    <div v-if="itemId === 303 && siteType === 'B'">
+                    <div v-if="300 <= itemId && itemId < 400 && siteType === 'B'">
                         <button onclick="d_modal.showModal()" class="btn btn-neutral text-lg">カートに追加する</button>
                     </div>
                     <div v-else>
@@ -44,6 +44,7 @@
             <div class="modal-box w-[80%] max-w-3xl p-12">
                 <div class="grid grid-cols-subgrid gap-9 col-span-5">
                     <h3 class="col-span-5 text-lg font-bold">こちらの商品を購入するにはアンケートにご協力ください。</h3>
+                    <p class="col-span-5 text-xm">(購入せずに戻る場合はESCキーを押してください。)</p>
                     <p class="col-span-5 text-lg">1. あなたの性別を教えてください。</p>
 
                     <div class="form-control">
