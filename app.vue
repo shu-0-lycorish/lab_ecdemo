@@ -8,6 +8,4 @@
 import { useState } from '#app'
 
 const cart = useState('cart', () => ([]))
-
-
 </script>
