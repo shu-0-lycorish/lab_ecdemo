@@ -8,8 +8,8 @@
                 <div class="absolute bottom-6 left-6 w-5/12">
                     <div class="flex flex-col space-y-4 px-6 py-6 bg-white">
                         <div class="space-y-2">
-                            <h2 class="text-4xl text-black font-light">ヴィンテージグレイウィングバックソファ</h2>
-                            <p class="text-black">優雅な背もたれデザインが特徴のクラシックなグレーのソファは、上品で落ち着いた雰囲気を提供します。</p>
+                            <h2 class="text-4xl text-black font-light">ベルベットエメラルドソファ</h2>
+                            <p class="text-black">クラシックでラグジュアリーなエメラルドグリーンのソファは、高級感と快適性を提供します。</p>
                         </div>
                         <h4 class="text-2xl text-black">¥68000 (税込)</h4>
                     </div>
